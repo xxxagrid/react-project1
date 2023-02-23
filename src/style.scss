@@ -1,0 +1,112 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html{
+    background: #23252C;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 44px 116px;
+
+}
+.app{
+    background-color: #1A1B21;
+}
+
+.info{
+    display: grid;
+    text-align: center;
+    margin-bottom: 33px;
+
+    img{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    &_text{
+
+        &_name{
+            margin: 21px 0 7px;
+            font-weight: 700;
+            font-size: 25px;
+            color: #FFFFFF;
+        }
+        &_profession{
+            font-size: 12.8px;
+            color: #F3BF99;
+            margin-bottom: 9px;
+        }
+        &_website{
+            font-size: 10.24px;            
+            color: #F5F5F5;
+            margin-bottom: 15px;
+        }
+    }
+
+    &_buttons{
+        display: grid;
+        grid-template-columns: 115px 115px;
+        column-gap: 17px;
+        justify-content: center;
+        
+        &_item{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .button-info_email{
+            color: #374151;
+            background: #FFFFFF;
+            border: 1px solid #D1D5DB;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+            border-radius: 6px;
+            background: #fff url('./icons/Mail.svg') 26px no-repeat ;
+            padding: 8px 51px;
+            // &::before{
+            //     content: './icons/Mail.svg' left no-repeat;
+            // } 
+            
+        }
+        .button-info_linkedin{
+            color: #FFFFFF;
+            background: #5093E2;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+            border-radius: 6px;
+            padding: 8px 40px;
+            background: #5093E2 url('./icons/linkedin.svg') 16px no-repeat ;
+        }
+    }
+}
+
+.portfolio{
+    background-color: #1A1B21;
+    display: grid;
+    row-gap: 27px;
+    max-width: 247px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+.title{
+    font-weight: 700;
+    font-size: 16px;
+    color: #F5F5F5;
+    margin-bottom: 5px;
+}
+.text{
+    font-size: 10.24px;
+    color: #DCDCDC;
+    line-height: 150%;
+}
+
+.footer{
+    background: #161619;
+    border-radius: 0px 0px 10px 10px;
+    padding: 19px 73px;
+
+    &_icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 24px;
+    }
+}
